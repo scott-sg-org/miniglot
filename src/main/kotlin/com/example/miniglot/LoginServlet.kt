@@ -28,9 +28,9 @@ class LoginServlet : GenericServlet() {
 
         out.println("<html><head><title>Hello World!</title></head>")
         if (! userId.isNullOrEmpty()) {
-            out.println("<body><h1>Hello User $userId</h1>" + getUser(userId) + "</body></html>")
+            out.println("<body><h1>Hello User $userId</h1>" + getUser(userId) + "</body></html>\n\n")
         } else {
-            out.println("<body><h1>Hello World!</h1></body></html>")
+            out.println("<body><h1>Hello World!</h1></body></html>\n\n")
         }
     }
 

@@ -1,4 +1,4 @@
-package com.example.minitest;
+package com.example.miniglot;
 
 import org.apache.commons.dbcp2.BasicDataSource;
 

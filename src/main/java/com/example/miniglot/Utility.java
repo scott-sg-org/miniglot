@@ -1,4 +1,4 @@
-package com.example.minitest;
+package com.example.miniglot;
 
 public class Utility {
 	public static String cleanInputAsString(String input) {

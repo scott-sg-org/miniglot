@@ -1,4 +1,4 @@
-package com.example.minitest;
+package com.example.miniglot;
 
 import java.io.IOException;
 import java.sql.Connection;

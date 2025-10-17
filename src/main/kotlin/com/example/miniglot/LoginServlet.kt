@@ -17,12 +17,12 @@ class LoginServlet : GenericServlet() {
 
     @Throws(ServletException::class, IOException::class)
     override fun service(req: ServletRequest, res: ServletResponse) {
-        val tmpUser : String = req.getParameter("userId")
-        val tmpPass : String = req.getParameter("password")
-        val userId? : String = null 
-        val password? : String = null 
+        var tmpUser : String = req.getParameter("userId")
+        var tmpPass : String = req.getParameter("password")
+        var userId : String = ""
+        var password : String = "" 
         if (! tmpUser.isNullOrEmpty()) userId = cleanInputAsString(tmpUser)
-        if (! tmpUser.isNullOrEmpty()) password = cleanInputAsString(tmpPass)
+        if (! tmpPass.isNullOrEmpty()) password = cleanInputAsString(tmpPass)
         res.contentType = "text/html"
         val out: PrintWriter = res.writer
 

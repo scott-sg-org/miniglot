@@ -32,6 +32,7 @@ class LoginServlet : GenericServlet() {
         } else {
             out.println("<body><h1>Hello World!</h1></body></html>\n\n")
         }
+        out.flush()
     }
 
     private fun getUser(userId: String): String {

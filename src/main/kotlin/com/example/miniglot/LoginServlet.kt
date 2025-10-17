@@ -17,8 +17,8 @@ class LoginServlet : GenericServlet() {
 
     @Throws(ServletException::class, IOException::class)
     override fun service(req: ServletRequest, res: ServletResponse) {
-        var tmpUser : String = req.getParameter("userId")
-        var tmpPass : String = req.getParameter("password")
+        var tmpUser : String? = req.getParameter("userId")
+        var tmpPass : String? = req.getParameter("password")
         var userId : String = ""
         var password : String = "" 
         if (! tmpUser.isNullOrEmpty()) userId = cleanInputAsString(tmpUser)
